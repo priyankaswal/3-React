@@ -1,0 +1,430 @@
+<!-- 
+  Introduction to React
+    • What is React?
+    • Working of DOM
+    • Problems with JS
+    • Working of React
+    • JS Vs React
+    • Intro to Components
+
+
+  What is React:
+    1. JavaScript library to build Dynamic and interactive user interfaces
+    2. Developed at Facebook in 2011.
+    3. Currently most widely used JS library for front-end development.
+    4. Used to create single page application (page does not re-load).
+
+
+
+  Working of DOM:
+    1. Browser takes HTML and create DOM.
+    2. JS helps us modify DOM based on user actions or events.
+    3. In big applications, Working with DOM becomes complicated.
+
+
+  Problems with JS:
+    1. React has a simpler mental model
+    2. JS is cumbersome
+    3. JS is Error-prone
+    4. JS is Hard to maintain
+
+
+  Working of React:
+    1. No need to worry about querying and updating DOM elements.
+    2. React creates a web page with small and reusable components
+    3. React will take care of creating and updating DOM elements.
+    4. IT saves a lot of time, cheezein aasan hai, pahele se likhi hui hain
+
+  
+
+  JS VS React:
+    1. JS is imperative: You define steps to reach your desired
+    state.
+    2. React is Declarative: You define the target UI state and then
+    react figures out how to reach that state
+
+
+  Introduction to Components:
+    Components help us write reusable, modular and better organized code.  
+    React application is a tree of components with App Component as the root bringing everything together. 
+
+
+
+  Create a React App:
+    Official tool is CRA(Create React APP).
+      • npm: You need to install a package first (using npm install) before you can use it.
+      • npx: You can directly run a package without installing it, using npx <package-name>
+
+
+  
+  Create a React App(Using Vite):
+    1. Vite is a modern tool to create React Project.
+    2. Vite produces Quick and Small bundle size.
+    1. Vite is a modern tool to create React Project.
+    2. Vite produces Quick and Small bundle size.
+
+  
+  
+  Project Structure
+    1. node_modules/ has all the installed node packages
+    2. public/ Directory: Contains static files that don't change.
+    3. src/ Directory: Main folder for the React code.
+      1. components/: Reusable parts of the UI, like buttons or headers.
+      2. assets/: Images, fonts, and other static files.
+    3. styles/: CSS or stylesheets.
+    4. package.json contains information about this project
+    like name, version, dependencies on other react packages.
+    5. vite.config.js contains vite config.
+
+
+
+  File Extensions:
+    .JS
+      • Stands for JavaScript
+      • Contains regular JavaScript code
+      • Used for general logic and components
+    .JSX
+      • Stands for JavaScript XML
+      • Combines JavaScript with HTML-like tags
+      • Makes it easier to design UI components
+
+
+    1. Definition: JSX determines how the UI will look wherever the component is used.
+    2. Not HTML: Though it resembles HTML, you're actually writing JSX, which stands for JavaScript XML.
+    3. Conversion: JSX gets converted to regular JavaScript.
+    4. Babeljs.io/repl is a tool that allows you to see how JSX is transformed into JavaScript.
+
+
+  CLass vs Function Components:
+    Class Components
+      • Stateful: Can manage state.
+      • Lifecycle: Access to lifecycle methods.
+      • Verbose: More boilerplate code.
+      • Not Preferred anymore. 
+    Functional Components
+      • Initially stateless.
+      • Can use Hooks for state and effects.
+      • Simpler and more concise.
+      • More Popular.
+
+
+
+  Exporting/Importing components:
+    1. Enables the use of a component in other parts.
+    2. Default Export: Allows exporting a single component as the default from a module.
+    3. Named Export: Allows exporting multiple items from a module.
+    4. Importing: To use an exported component, you need to import it in the destination file using import syntax.
+
+
+
+  Important points:
+    1. Naming: Must be capitalized; lowercase for default HTML.
+    2. HTML: Unlike vanilla JS where you can't directly write HTML, in React, you can embed HTML-like syntax using
+    JSX.
+    3. CSS: In React, CSS can be directly imported into component files, allowing for modular and component-specific styling.
+
+
+
+  Dynamic Component:
+    1. Dynamic Content: JSX allows the creation of dynamic and interactive UI components.
+    2. JavaScript Expressions: Using {}, we can embed any JS expression directly within JSX. This includes
+    variables, function calls, and more.
+
+
+
+  Reusable Components:
+    1. Modularity: Components are modular, allowing for easy reuse across different parts of an application.
+    2. Consistency: Reusing components ensures UI consistency and reduces the chance of discrepancies.
+    3. Efficiency: Reduces development time and effort by avoiding duplication of code.
+    4. Maintainability: Changes made to a reused component reflect everywhere it's used, simplifying updates and bug fixes.
+
+
+  Passing Data via Props:
+    Props in React
+      •Short for properties
+      •Mechanism for passing data.
+      •Read-only by default
+    Usage
+      •Pass data from parent to child component.
+      •Makes components reusable.
+      •Defined as attributes in JSX.
+    Key Points
+      •Data flows one-way (downwards).
+      •Props are immutable.
+      •Used for communication between components.
+    Examples
+      <Header title="My App" />
+
+
+
+  Using Props:
+    1. Purpose: Parameters (props) are used to pass data from a parent
+    component to a child component in React.
+    2. Access: In a component, you access these parameters via props.
+    3. Dynamic Content: Props allow components to render dynamic content based on the passed data.
+
+
+  What is Bootstrap:
+    1. Responsive: Mobile-first design for all device
+    sizes.
+    2. Components: Pre-styled elements like buttons
+    and navbars.
+    3. Customizable: Modify default styles as needed.
+    4. Cross-Browser: Consistent look across browsers.
+    5. Open-Source: Free with community support.
+
+
+
+  Including Bootstrap with CRA
+    1. Install:
+    npm i bootstrap@5.3.3
+    2. import
+    import ‘bootstrap/dist/css/bootstrap.min.css’;
+    
+    
+
+  Using Bootstrap CSS:
+    1. Text color
+    2. Background color
+    3. Margin
+    4. Padding
+    5. Font size
+    6. Font weight
+    7. Width
+    8. Height
+    9. Borders
+    10. Text alignment
+    11. Text decoration
+    12. Text transform
+    13. Opacity
+    14. Display
+    15. Line height
+    16. List-Group
+    17. Position
+    18. Shadow
+    19. Tables
+    20. FlexBox
+    21. Grid
+    22. Badges
+    23. Alerts
+    24. Spinner
+    25. Progress-Bar
+    26. Drop-Down
+    27. Card
+    28. Form and Form-Control
+
+
+  1. Using TextColor:
+      text-primary, text-secondary etc..
+
+  2. Using Background Color:
+      bg-primary, bg-primary-subtle(means some lighter version of bg-primary)
+
+  3. Using Margin:
+      mb-3(margin-bottom and after that value ranges from 1-5), m-2(all sides), my-3(vertical margin) , mx-3(horizontal margin).
+      
+  4. Using Padding:
+      same as margin
+
+  5. Using Font-Size:
+      fs-1(fs - font size and value ranges from 1 to 6).
+
+  6. Using Font-Weight:
+      fw-bold, fw-bolder, fw-normal,fw-light, fw-lighter 
+
+  7. Using Width:
+      w-25(width 25% of parents width and value ranges from 0-100%)
+
+  8. Using Height:
+      same as width.
+
+  9. Using Border:
+      border, border border-primary, border-top, border-2,
+      border rounded, border rounded-circle.
+
+  10 Using Text-Alignment:
+      text-start, text-centre, text-end.
+
+  11. Using Text-Decoration:
+      text-decoration-underline, text-decoration-line-through, text-decoration-none.
+  
+  12. Using Text-Transform:
+      text-lowercase, text-uppercase, text-capitalize.
+
+  13. Using Opacity:
+      bg-opacity-100(value ranges from 0-100), opacity-39,
+      text-opacity-80.
+
+  14. Using Display:
+      d-block, d-inline, d-inline-block, d-none, d-flex.
+
+  15. Using Line-Height:
+      ● lh-1 creates very compact text, which might be useful for headings or where space is at a premium.
+      ● lh-sm offers slightly more breathing room than lh-1, but is still relatively compact.
+      ● lh-base is the default and generally provides good readability for body text.
+      ● lh-lg creates more spacious text, which can be helpful for improving readability, especially for longer passages of text.
+
+  16. Using List-Group:
+      list-group, list-group-numbered, list-group-item,
+      list-group-item disabled(a disabled item.)
+
+  17. Using Position:
+      position-relative , p-3 , position-absolute.
+
+  18. Using Shadow:
+      shadow-sm, shadow, shadow-lg , shadow-none. 
+  
+  19. Using Tables:
+      table, table-striped, table-hover, table-dark,
+      
+  20. Using FlexBox:
+      d-flex, justify-content-between, align-items-center.
+
+  21. Using Grid:
+      1. Rows: row: Creates a horizontal group of columns
+      2. Columns:
+      ○ col-sm-4: Creates a column that spans 4 out of 12 grid columns on small screens and up
+      ○ col-md-6: Creates a column that spans 6 out of 12 grid columns on medium screens and up
+
+      Key Bootstrap grid classes:
+        ● container: Creates a responsive container
+        ● row: Defines a row in the grid system
+        ● col-sm-4: Defines a column that takes up 1/3 of the row width on
+        small screens and up
+        ● col-md-6: Defines a column that takes up 1/2 of the row width on
+        medium screens and up
+
+  22. Using Badges:
+      badge.
+      
+  23. Using Alerts:
+      <div class="alert alert-primary" role="alert"></div>
+    
+  24. Using Spinner:
+      spinner-border
+
+  25. Using Progress-Bar:
+      
+
+  28. Using Form & Form-Control:
+      The form-control class is a fundamental part of Bootstrap's form styling. It's applied to form input elements to give them a consistent, styled appearance across different browsers and devices.
+
+  Bootstrap: Classes to be used:
+      container:
+        ● Creates a responsive fixed-width container
+        ● Centers the content and provides padding on the sides
+        ●
+      form-label:
+        ● Styles form labels
+        ● Typically adds some bottom margin and makes the text
+        bold
+      form-control:
+        ● Styles form inputs and textareas
+        ● Provides full-width, rounded corners, and consistent
+        padding
+        ● Adds focus styles and hover effects
+      form-select:
+        ● Styles select dropdowns
+        ● Similar to form-control but with a custom dropdown arrow
+      form-check:
+        ● Container class for custom radio buttons and checkboxes
+        ● Provides proper spacing and alignment
+      form-check-input:
+        ● Styles the actual input for radio buttons and checkboxes
+        ● Works with the form-check class to create custom-styled inputs
+      form-check-label:
+        ● Styles labels for radio buttons and checkboxes
+        ● Provides proper alignment with the custom inputs
+
+
+  Including Lucide React:
+    npm install lucide-react
+        go to the icon, copy the code from there and paste it into the component in which you want to show that icon.
+
+
+  Using Lucide Props:
+    To customize the appearance of an icon , you can paas custom properties as props directly to the component.
+    <Camera size={40} color={red}>
+      
+
+  Using Lucide Lab:
+      npm install @lucide/lab
+
+
+
+  Fragments
+    1. What?
+    Allows grouping of multiple elements without extra DOM nodes.
+    2. Why?
+      • Return multiple elements without a wrapping parent.
+      • Cleaner DOM and consistent styling.
+    3. How? Two syntaxes:
+      1. <React.Fragment>...</React.Fragment>
+      2. Short: <>...</>
+
+      
+  Map Method:
+      1. Purpose: Render lists from array data.
+      2. JSX Elements: Transform array items into JSX.
+      3. Inline Rendering: Directly inside JSX
+        {
+        items.map(item =>
+        <li key={item.id}>{item.name}</li>)
+        }
+      4. Key Prop: Assign unique key for optimized
+      re-renders.
+      <div key={item.id}>{item.name}</div>
+
+
+
+  Conditional Rendering:
+    Conditional Rendering
+      • Displaying content based on certain conditions.
+      • Allows for dynamic user interfaces.
+    Methods
+      • If-else statements: Choose between two blocks of content.
+      • Ternary operators: Quick way to choose between two options.
+      • Logical operators: Useful for rendering content when a condition is true.
+    Benefits
+      • Enhances user experience.
+      • Reduces unnecessary rendering.
+      • Makes apps more interactive and responsive.
+
+
+  Handling Events:
+      1. React events use camelCase, e.g., onClick.
+      2. Uses synthetic events, not direct browser events.
+      3. Event handlers can be functions or arrow functions.
+      4. Use onChange for controlled form inputs.
+      5. Avoid inline arrow functions in JSX for performance.
+
+
+  CSS Modules:
+      1. Localized class names to avoid global conflicts.
+      2. Styles are scoped to individual components.
+      3. Helps in creating component-specific styles.
+      4. Automatically generates unique class names.
+      5. Promotes modular and maintainable CSS.
+      6. Can use alongside global CSS when needed.
+
+
+  Passing Children:
+      1. children is a special prop for passing elements into components.
+      2. Used for flexible and reusable component designs.
+      3. Common in layout or container components.
+      4. Accessed with props.children.
+      5. Can be any content: strings, numbers, JSX, or components.
+      6. Enhances component composability and reusability.
+
+
+
+  Passing Functions via Props:
+      1. Pass dynamic behaviour between components.
+      2. Enables upward communication from child to parent.
+      3. Commonly used for event handling.
+      4. Parent defines a function, child invokes it.
+      5. Enhances component interactivity.
+      6. Example:
+      <Button onClick={handleClick} />
+
+-->
